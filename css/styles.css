@@ -144,33 +144,43 @@ header .studio {
 
   line-height: 1.14;
 }
-.email-link::before {
+
+.email-icon {
+  display: inline-block;
+  margin-right: 10px;
+  fill: blue;
+}
+.envelop:hover {
+  fill: var(--accent-color);
+}
+
+/* .email-link::before {
   display: inline-block;
   content: "";
   width: 16px;
   height: 12px;
-  /* background-color: red ;
-  outline: 1px solid blue; */
+  background-color: red ;
+  outline: 1px solid blue;
 background-image: url(../images/envelope.svg);
 margin-right: 10px;
-/* background-position: center; */
+background-position: center;
 
 
-}
+} */
 
-.telephone-link::before {
+/* .telephone-link::before {
   display: inline-block;
   content: "";
 
   width: 10px;
   height: 16px;
-  /* background-color: red ;
-  outline: 1px solid blue; */
+  background-color: red ;
+  outline: 1px solid blue;
   background-image: url(../images/smartphone.svg);
   background-size: contain;
   margin-right: 10px;
   
-}
+} */
 
 /* BUTTONS */
 .button {
@@ -286,29 +296,29 @@ margin-right: 10px;
   text-transform: uppercase;
 }
 
-.feature-item::before {
-  content: "";
-  display: block;
+.feature-box {
   width: 270px;
   height: 120px;
+  padding: 25px 100px;
 
   margin-bottom: 30px;
 
   background-color: #f5f4fa;
-  background-repeat: no-repeat;
-  background-position: center;
-
   border-radius: 4px;
 }
 
-.icon-details::before {
+/* .feature-item {
+  margin: 30px;
+} */
+
+/* .icon-details::before {
   background-image: url(../images/antenna\ 1.svg);}
 .punctuality-icon::before {
   background-image: url(../images/clock\ 1.svg);}
 .planning-icon::before {
   background-image: url(../images/diagram\ 1.svg);}
 .modern-icon::before {
-  background-image: url(../images/astronaut\ 1.svg);}
+  background-image: url(../images/astronaut\ 1.svg);} */
 
 
 /* activities */
