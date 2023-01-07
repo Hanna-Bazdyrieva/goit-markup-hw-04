@@ -545,6 +545,7 @@ footer .studio {
 }
 .project-link {
   display: block;
+  border: 1px solid var(--portfolio-projects-border-color);
 }
 .project-link:hover,
 .project-link:focus {
