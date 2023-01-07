@@ -547,6 +547,8 @@ footer .studio {
 }
 .project-link {
   display: block;
+  /* width: 370px; */
+  /* height: 404px; */
   width: 370px;
   height: 404px;
   
