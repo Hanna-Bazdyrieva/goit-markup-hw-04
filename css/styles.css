@@ -2,6 +2,7 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --hero-btn-active-color: #188CE8;
   --primary-white-color: #ffffff;
   --hero-bcg-color: rgba(47, 48, 58, 0.4);
   --pale-grey: #f5f4fa;
@@ -127,25 +128,29 @@ header .studio {
 .contacts-nav {
   display: flex;
   margin-left: auto;
+  margin-right: 0;
 }
 
 .contacts-nav .item + .item {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .email-link,
 .telephone-link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
+  font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
 .envelop-icon,
 .smartphone-icon {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   margin-right: 10px;
 
   fill: currentColor;
@@ -172,6 +177,9 @@ header .studio {
 }
 
 .hero-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px 34px;
 
   font-weight: 700;
@@ -182,12 +190,13 @@ header .studio {
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0;
+
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  color: var(--accent-color);
-  background-color: var(--primary-text-color);
+
+  background-color: var(--hero-btn-active-color);
 }
 
 /* MAIN PAGE */
@@ -195,10 +204,10 @@ header .studio {
 /* HERO */
 
 .hero {
+  
   padding-top: 200px;
-  padding-bottom: 200px;
+  padding-bottom: 200px; 
 
-  text-align: center;
   background-color: var(--hero-bcg-color);
   background-image: linear-gradient(
       to top,
@@ -211,13 +220,14 @@ header .studio {
 }
 
 .hero-title {
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 0 auto 30px auto;
+  width: 696px;
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
 
   color: var(--primary-white-color);
@@ -281,9 +291,12 @@ header .studio {
 }
 
 .feature-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
-  padding: 25px 100px;
+  
 
   margin-bottom: 30px;
 
@@ -320,16 +333,18 @@ header .studio {
   padding-bottom: 30px;
 
   background-color: var(--primary-white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12)
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
    0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.member-name {
-  margin-top: 30px;
-  margin-bottom: 10px;
+.team-details {
+ padding-top: 30px;
+  padding-bottom: 16px;
+}
 
+.team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -339,24 +354,26 @@ header .studio {
   color: var(--title-text-color);
 }
 
-.team-list p {
+.team-job {
+  padding-top: 10px;
+
   font-size: 16px;
   line-height: 1.19;
-
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .team-socials {
   display: flex;
   height: 44px;
-  width: 206px;
 
-  margin: 16px 32px 0 32px;
+  padding:0 32px;
   gap: 10px;
 }
 
 .team-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
 
@@ -370,7 +387,6 @@ header .studio {
   background-color: var(--accent-color);
 }
 .link-icon {
-  margin: 12px;
   fill: currentColor;
 }
 
@@ -475,6 +491,7 @@ footer .studio {
   margin-bottom: 20px;
 
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
